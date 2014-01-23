@@ -2,14 +2,20 @@
 
 
 
-        border: 1px solid $color;
-        background: fade-out($color, .85);
+        border: 1px solid $color_clouds;
+        background: fade-out($color_clouds, .1);
         margin-bottom: 1.5em;
         border-radius: 5px;
         padding: 20px;
-        margin: 10pz;
-        width: 500px;
+        margin: 40px 0 0 0;
+        width: 600px;
         position: relative;
+        box-shadow: 1px 1px 2px $color_clouds;
+
+        &:hover{
+            opacity: .85;
+        }
+
 
 
 }

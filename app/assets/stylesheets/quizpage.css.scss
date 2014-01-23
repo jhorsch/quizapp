@@ -6,6 +6,15 @@
 @import "library";
 @import "reset";
 
+//Global variable
+$color_sky: #0066AD;
+$color_hancock: #2D384E;
+$color_ocean: #358A7D;
+$color_clouds: #CCCCCA;
+$color_building: #9F4B1F;
+
+
+
 // Global templates
 
 %group:after {
@@ -15,8 +24,9 @@
 }
 
 %container {
-    margin: 0 auto;
-    max-width: 960px;
+    max-width: 600px;
+    margin: auto 0;
+    margin: 50px;
 }
 
 // Global tags
@@ -25,13 +35,10 @@ body {
     font-family: "gill sans", Helvetica;
     font-size: 18px;
     line-height: 24px;
-    padding: 30px 0;
-    text-align: center;
-    color: white;
-
-     background: url('bw21.jpg')  center center no-repeat;
+    padding: 15px 15px;
+    background: url('ChicagoSkyline.jpg')  center center no-repeat;
     background-size: cover;
-
+    color: #2D384E;
 
 
 }
@@ -41,36 +48,24 @@ h1 {
     margin-bottom: 1em;
     font-weight: bold;
 
+    color: #CCCCCA;
+    width: 1000px;
 
-    a {
-        text-decoration: none;
-    }
+
 }
 
 h2 {
     font-size: 30px;
-    margin-bottom: .4em;
+
 }
 
-a {
-    color: #800000;
-}
 
 h3{
     position: absolute;
-    top: 10px;
-    left: 10px;
+    bottom: 10px;
+    right: 10px;
     font-size: 22px;
 }
-
-
-
-//Global variable
-$color1: white;
-$color2: blue;
-$color3: green;
-$color4: purple;
-$color5: orange;
 
 
 
@@ -78,24 +73,50 @@ $color5: orange;
 
 form {
     @extend %container;
-
-
 }
 
 
 .field1 {
-    @include fieldset($color1);
+    @include fieldset($color_sky);
 
     h2{
-        color: $color1;
+        color: $color_sky;
     }
 }
 
 .field2 {
-    @include fieldset($color2);
+    @include fieldset($color_hancock);
 
     h2{
-        color: $color2;
+        color: $color_hancock;
+    }
+
+}
+
+
+.field3 {
+    @include fieldset($color_building);
+
+    h2{
+        color: $color_building;
+    }
+
+}
+
+.field4 {
+    @include fieldset($color_ocean);
+
+    h2{
+        color: $color_ocean;
+    }
+
+}
+
+.field5 {
+    @include fieldset($color_sky);
+
+    h2{
+        color: $color_sky;
     }
 
 }
@@ -123,7 +144,7 @@ label {
 
 
 .ind_question{
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 
