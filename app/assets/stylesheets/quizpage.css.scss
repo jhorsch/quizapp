@@ -6,6 +6,8 @@
 @import "library";
 @import "reset";
 
+// @import "compass/css3";
+
 //Global variables
 $color_sky: #0066AD;
 $color_hancock: #2D384E;
@@ -21,6 +23,10 @@ $color_building: #9F4B1F;
     content: "";
 }
 
+.container{
+    border: 2px solid black;
+    padding: 0 20px;
+}
 
 // Global tags
 body {
@@ -68,76 +74,40 @@ h3{
     top: 40px;
     right: 40px;
     background: url('chicagoflag.jpg') center center no-repeat fixed;
-
+    // z-index: 100;
 
 
 }
 
 // Everything else
-form {
-    width: 45%;
-    max-width: 600px;
+fieldset {
 
-    left: 5%;
-    // border: 1px solid black;
-    position: relative;
+    max-width: 600px;
+        // border: 1px solid black;
+    // position: relative;
 }
 
 .field1 {
-
-    @include fieldset($color_clouds);
-
-    h2{
-        color: $color_sky;
-    }
+    @include fieldset($color_sky,$color_clouds);
 }
 
 .field2 {
-    @include fieldset($color_clouds);
-
-    h2{
-        color: $color_hancock;
-    }
-
+    @include fieldset($color_hancock,$color_clouds);
 }
 
 .field3 {
-    @include fieldset($color_clouds);
-
-    h2{
-        color: $color_building;
-    }
-
+    @include fieldset($color_building,$color_clouds);
 }
 
 .field4 {
-    @include fieldset($color_clouds);
-
-    h2{
-        color: $color_ocean;
-    }
-
+    @include fieldset($color_ocean,$color_clouds);
 }
 
 .field5 {
-    @include fieldset($color_clouds);
-
-    h2{
-        color: $color_sky;
-    }
-
+    @include fieldset($color_sky,$color_clouds);
 }
 
 
-input {
-    // &:checked + label{
-    //     display: none;
-    // }
-    }
-
-// input[type=radio]:checked + label{
-//         display: none;
-//     }
 
 label {
     margin-right: 10px;
@@ -149,15 +119,31 @@ label {
 }
 
 .submit_button{
+
     width: 600px;
     height: 100px;
     color: $color_hancock;
     background: $color_sky;
     border: 10px;
     font-size: 35px;
-
-     @include fieldset($color_sky);
+    display: block;
+     @include fieldset($color_sky,$color_sky);
 
 }
+
+
+@media screen and (max-width: 600px) {
+
+    h1{
+        text-align: center;
+    }
+
+    label{
+        line-height: 18px;
+        padding: 0 5px;
+    }
+
+}
+
 
 

@@ -1,20 +1,59 @@
-@mixin fieldset($color){
+// @import "compass/css3";
 
-        border: 1px solid $color;
-        background: fade-out($color, .1);
+
+@mixin fieldset($question_color,$bg_color) {
+
+        border: 1px solid $bg_color;
+        background: fade-out($bg_color, .1);
         margin-bottom: 1.5em;
         border-radius: 10px;
         padding: 20px;
         margin: 40px 0 0 0;
         // width: 600px;
         position: relative;
-        box-shadow: 2px 2px 2px $color;
+        box-shadow: 2px 2px 2px $bg_color;
         // background-image: url("chiflag.png");
+
+        h2{
+            color: $question_color;
+        }
 
         &:hover{
             opacity: .85;
         }
 
+        input{
 
+            display: none;
+
+            + label {
+                display: inline-block;
+                border-radius: 5px;
+                padding: 10px;
+                // @include transition(all 500ms ease);
+
+                &:hover {
+                    background: fade_out($question_color,.75);
+                }
+            }
+
+            &:checked + label {
+                background:$question_color;
+                // font-size: 40px;
+                border-radius: 5px;
+                border-color: white;
+                color: $bg_color;
+
+                &:before {
+                    content: "✓ ";
+               }
+            }
+        }
 
 }
+
+
+
+
+
+
