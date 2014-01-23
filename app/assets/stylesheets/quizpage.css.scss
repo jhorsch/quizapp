@@ -1,3 +1,129 @@
 // Place all the styles related to the quizpage controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+@import "library";
+@import "reset";
+
+// Global templates
+
+%group:after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+%container {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+// Global tags
+
+body {
+    font-family: "gill sans", Helvetica;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 30px 0;
+    text-align: center;
+    color: white;
+
+     background: url('bw21.jpg')  center center no-repeat;
+    background-size: cover;
+
+
+
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 1em;
+    font-weight: bold;
+
+
+    a {
+        text-decoration: none;
+    }
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: .4em;
+}
+
+a {
+    color: #800000;
+}
+
+h3{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 22px;
+}
+
+
+
+//Global variable
+$color1: white;
+$color2: blue;
+$color3: green;
+$color4: purple;
+$color5: orange;
+
+
+
+// Everything else
+
+form {
+    @extend %container;
+
+
+}
+
+
+.field1 {
+    @include fieldset($color1);
+
+    h2{
+        color: $color1;
+    }
+}
+
+.field2 {
+    @include fieldset($color2);
+
+    h2{
+        color: $color2;
+    }
+
+}
+
+
+
+
+
+
+
+input {
+    // &:checked + label{
+    //     display: none;
+    // }
+    }
+
+// input[type=radio]:checked + label{
+//         display: none;
+//     }
+
+label {
+    margin-right: 10px;
+}
+
+
+
+.ind_question{
+    margin-top: 5px;
+}
+
+
