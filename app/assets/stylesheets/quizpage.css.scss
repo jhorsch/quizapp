@@ -13,8 +13,6 @@ $color_ocean: #358A7D;
 $color_clouds: #CCCCCA;
 $color_building: #9F4B1F;
 
-
-
 // Global templates
 
 %group:after {
@@ -24,9 +22,7 @@ $color_building: #9F4B1F;
 }
 
 %container {
-    max-width: 600px;
-    margin: auto 0;
-    margin: 50px;
+
 }
 
 // Global tags
@@ -36,27 +32,26 @@ body {
     font-size: 18px;
     line-height: 24px;
     padding: 15px 15px;
-    background: url('ChicagoSkyline.jpg')  center center no-repeat;
+    background: url('ChicagoSkyline.jpg')  top center no-repeat;
     background-size: cover;
-    color: #2D384E;
-
-
+    color: $color_hancock;
 }
 
 h1 {
-    font-size: 36px;
-    margin-bottom: 1em;
-    font-weight: bold;
 
-    color: #CCCCCA;
-    width: 1000px;
+    font-size: 36px;
+    margin: 20px 0;
+    font-weight: bold;
+    line-height: 40px;
+    color: $color_clouds;
+    width: 100%;
+    text-align: left;
 
 
 }
 
 h2 {
     font-size: 30px;
-
 }
 
 
@@ -68,15 +63,19 @@ h3{
 }
 
 
-
 // Everything else
 
 form {
-    @extend %container;
+    width: 45%;
+    max-width: 600px;
+
+    left: 5%;
+    // border: 1px solid black;
+    position: relative;
 }
 
-
 .field1 {
+
     @include fieldset($color_sky);
 
     h2{

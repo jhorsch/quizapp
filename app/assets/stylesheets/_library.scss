@@ -5,12 +5,12 @@
         border: 1px solid $color_clouds;
         background: fade-out($color_clouds, .1);
         margin-bottom: 1.5em;
-        border-radius: 5px;
+        border-radius: 10px;
         padding: 20px;
         margin: 40px 0 0 0;
-        width: 600px;
+        // width: 600px;
         position: relative;
-        box-shadow: 1px 1px 2px $color_clouds;
+        box-shadow: 2px 2px 2px $color_clouds;
 
         &:hover{
             opacity: .85;
