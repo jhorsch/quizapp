@@ -6,27 +6,23 @@
 @import "library";
 @import "reset";
 
-//Global variable
+//Global variables
 $color_sky: #0066AD;
 $color_hancock: #2D384E;
 $color_ocean: #358A7D;
 $color_clouds: #CCCCCA;
 $color_building: #9F4B1F;
 
-// Global templates
 
+// Global templates
 %group:after {
     display: table;
     clear: both;
     content: "";
 }
 
-%container {
-
-}
 
 // Global tags
-
 body {
     font-family: "gill sans", Helvetica;
     font-size: 18px;
@@ -52,6 +48,7 @@ h1 {
 
 h2 {
     font-size: 30px;
+    line-height: 32px;
 }
 
 
@@ -63,8 +60,20 @@ h3{
 }
 
 
-// Everything else
+.banner-image{
+    max-width: 100%;
+    position: absolute;
+    width: 150px;
+    height: 200px;
+    top: 40px;
+    right: 40px;
+    background: url('chicagoflag.jpg') center center no-repeat fixed;
 
+
+
+}
+
+// Everything else
 form {
     width: 45%;
     max-width: 600px;
@@ -76,7 +85,7 @@ form {
 
 .field1 {
 
-    @include fieldset($color_sky);
+    @include fieldset($color_clouds);
 
     h2{
         color: $color_sky;
@@ -84,7 +93,7 @@ form {
 }
 
 .field2 {
-    @include fieldset($color_hancock);
+    @include fieldset($color_clouds);
 
     h2{
         color: $color_hancock;
@@ -92,9 +101,8 @@ form {
 
 }
 
-
 .field3 {
-    @include fieldset($color_building);
+    @include fieldset($color_clouds);
 
     h2{
         color: $color_building;
@@ -103,7 +111,7 @@ form {
 }
 
 .field4 {
-    @include fieldset($color_ocean);
+    @include fieldset($color_clouds);
 
     h2{
         color: $color_ocean;
@@ -112,18 +120,13 @@ form {
 }
 
 .field5 {
-    @include fieldset($color_sky);
+    @include fieldset($color_clouds);
 
     h2{
         color: $color_sky;
     }
 
 }
-
-
-
-
-
 
 
 input {
@@ -141,9 +144,20 @@ label {
 }
 
 
-
 .ind_question{
     margin-top: 10px;
+}
+
+.submit_button{
+    width: 600px;
+    height: 100px;
+    color: $color_hancock;
+    background: $color_sky;
+    border: 10px;
+    font-size: 35px;
+
+     @include fieldset($color_sky);
+
 }
 
 

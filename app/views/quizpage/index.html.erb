@@ -1,8 +1,14 @@
 
-<form>
+<div class='banner-image'></div>
+
+
+
+<%= form_tag(quizpage_url(:id), method: 'post') do %>
+
 
 <header>
 <h1>Where's the best place for me to live in Chicago?</h1>
+
 </header>
 
 
@@ -11,55 +17,55 @@
 <h3>1/5</h3>
 
     <div class='ind_question'>
-        <input type="radio" name="question1" value="answer1" id="answer1">
-        <label for = "answer1">Swimming in the lake, running along the lake, chillin' by the lake</label>
+        <input type="radio" name="question1" value="a11" id="a11">
+        <label for = "a1">Swimming in the lake, running along the lake, chillin' by the lake</label>
     </div>
     <div class='ind_question'>
-        <input type="radio" name="question1" value="answer2" id="answer2">
-        <label for = "answer2">At neighborhood festivals and places with out-door seating</label>
+        <input type="radio" name="question1" value="a12" id="a12">
+        <label for = "a2">At neighborhood festivals and places with out-door seating</label>
     </div>
     <div class='ind_question'>
-        <input type="radio" name="question1" value="answer3" id="answer3">
-        <label for = "answer3">I work all summer and never get to go outside</label>
-    </div>
-
-    <div class='ind_question'>
-        <input type="radio" name="question1" value="answer4" id="answer4">
-        <label for = "answer4">In my back yard firing up the old barbeque!</label>
+        <input type="radio" name="question1" value="a13" id="a13">
+        <label for = "a3">I work all summer and never get to go outside</label>
     </div>
 
     <div class='ind_question'>
-        <input type="radio" name="question1" value="answer5" id="answer5">
-        <label for = "answer5">Let me get out of Chicago and into the country</label>
+        <input type="radio" name="question1" value="a14" id="a14">
+        <label for = "a4">In my back yard firing up the old barbeque!</label>
+    </div>
+
+    <div class='ind_question'>
+        <input type="radio" name="question1" value="a15" id="a15">
+        <label for = "a5">Let me get out of Chicago and into the country</label>
 </div>
 </fieldset>
 
 
 <fieldset class="field2">
-<h2>When it comes to parking, you will most likely say...</h2>
+<h2>When it comes to parking ...</h2>
 <h3>2/5</h3>
 
     <div class='ind_question'>
-        <input type="radio" name="question2" value="answer21" id="answer21">
-        <label for = "answer21">I will pay whatever the price as long as I'm in the right neighborhood</label>
+        <input type="radio" name="question2" value="a21" id="a21">
+        <label for = "a21">I will pay whatever the price as long as I'm in the right neighborhood</label>
     </div>
     <div class='ind_question'>
-        <input type="radio" name="question2" value="answer22" id="answer22">
-        <label for = "answer22">I want to park inside my living room and not pay a cent</label>
+        <input type="radio" name="question2" value="a22" id="a22">
+        <label for = "a22">I want to park inside my living room and not pay a cent</label>
     </div>
     <div class='ind_question'>
-        <input type="radio" name="question2" value="answer23" id="answer23">
-        <label for = "answer23">I enjoy a brisk five-minute walk from my car to my home</label>
-    </div>
-
-    <div class='ind_question'>
-        <input type="radio" name="question2" value="answer24" id="answer24">
-        <label for = "answer24">I don't care about parking. I don't use a car</label>
+        <input type="radio" name="question2" value="a23" id="a23">
+        <label for = "a23">I enjoy a brisk five-minute walk from my car to my home</label>
     </div>
 
     <div class='ind_question'>
-        <input type="radio" name="question2" value="answer25" id="answer25">
-        <label for = "answer25">Brrr. With ice-cold Chicago winters I want to park near my house</label>
+        <input type="radio" name="question2" value="a24" id="a24">
+        <label for = "a24">I don't care about parking. I don't use a car</label>
+    </div>
+
+    <div class='ind_question'>
+        <input type="radio" name="question2" value="a25" id="a25">
+        <label for = "a25">Brrr. With ice-cold Chicago winters I want to park near my house</label>
 </div>
 </fieldset>
 
@@ -70,26 +76,26 @@
 <h3>3/5</h3>
 
     <div class='ind_question'>
-        <input type="radio" name="question3" value="answer31" id="answer31">
-        <label for = "answer31">Cubs of course, this will be the year!</label>
+        <input type="radio" name="question3" value="a31" id="a31">
+        <label for = "a31">Cubs of course, this will be the year!</label>
     </div>
     <div class='ind_question'>
-        <input type="radio" name="question3" value="answer32" id="answer32">
-        <label for = "answer32">I proudly wear my Cubs shirt but I can't name a single outfielder</label>
+        <input type="radio" name="question3" value="a32" id="a32">
+        <label for = "a32">I proudly wear my Cubs shirt but I can't name a single outfielder</label>
     </div>
     <div class='ind_question'>
-        <input type="radio" name="question3" value="answer33" id="answer33">
-        <label for = "answer33">I don't really care about Chicago teams</label>
-    </div>
-
-    <div class='ind_question'>
-        <input type="radio" name="question3" value="answer34" id="answer34">
-        <label for = "answer34">Baseball is boring!</label>
+        <input type="radio" name="question3" value="a33" id="a33">
+        <label for = "a33">I don't really care about Chicago teams</label>
     </div>
 
     <div class='ind_question'>
-        <input type="radio" name="question3" value="answer35" id="answer35">
-        <label for = "answer35">I'll go to a Sox game once in a while</label>
+        <input type="radio" name="question3" value="a34" id="a34">
+        <label for = "a34">Baseball is boring!</label>
+    </div>
+
+    <div class='ind_question'>
+        <input type="radio" name="question3" value="a35" id="a35">
+        <label for = "a35">I'll go to a Sox game once in a while</label>
 </div>
 </fieldset>
 
@@ -100,26 +106,26 @@
 <h3>4/5</h3>
 
     <div class='ind_question'>
-        <input type="radio" name="question4" value="answer41" id="answer41">
-        <label for = "answer41">I'm working hard to support my family</label>
+        <input type="radio" name="question4" value="a41" id="a41">
+        <label for = "a41">I'm working hard to support my family</label>
     </div>
     <div class='ind_question'>
-        <input type="radio" name="question4" value="answer42" id="answer42">
-        <label for = "answer42">Steadily building my career</label>
+        <input type="radio" name="question4" value="a42" id="a42">
+        <label for = "a42">Steadily building my career</label>
     </div>
     <div class='ind_question'>
-        <input type="radio" name="question4" value="answer43" id="answer43">
-        <label for = "answer43">Thanks to the economy I'm in between jobs</label>
-    </div>
-
-    <div class='ind_question'>
-        <input type="radio" name="question4" value="answer44" id="answer44">
-        <label for = "answer44">I just got my first real job</label>
+        <input type="radio" name="question4" value="a43" id="a43">
+        <label for = "a43">Thanks to the economy I'm in between jobs</label>
     </div>
 
     <div class='ind_question'>
-        <input type="radio" name="question4" value="answer45" id="answer45">
-        <label for = "answer45">I have this gig until my record goes platinum</label>
+        <input type="radio" name="question4" value="a44" id="a44">
+        <label for = "a44">I just got my first real job</label>
+    </div>
+
+    <div class='ind_question'>
+        <input type="radio" name="question4" value="a45" id="a45">
+        <label for = "a45">I have this gig until my record goes platinum</label>
 </div>
 </fieldset>
 
@@ -129,30 +135,34 @@
 <h3>5/5</h3>
 
     <div class='ind_question'>
-        <input type="radio" name="question5" value="answer51" id="answer51">
-        <label for = "answer51">PARTY!</label>
+        <input type="radio" name="question5" value="a51" id="a51">
+        <label for = "a51">PARTY!</label>
     </div>
     <div class='ind_question'>
-        <input type="radio" name="question5" value="answer52" id="answer52">
-        <label for = "answer52">Check out the newest restaurant or hit the clubs</label>
+        <input type="radio" name="question5" value="a52" id="a52">
+        <label for = "a52">Check out the newest restaurant or hit the clubs</label>
     </div>
     <div class='ind_question'>
-        <input type="radio" name="question5" value="answer53" id="answer53">
-        <label for = "answer53">Go watch a movie or maybe meet my friends at a bar</label>
-    </div>
-
-    <div class='ind_question'>
-        <input type="radio" name="question5" value="answer54" id="answer54">
-        <label for = "answer54">I might meet up with friends but most likely I'll stay home</label>
+        <input type="radio" name="question5" value="a53" id="a53">
+        <label for = "a53">Go watch a movie or maybe meet my friends at a bar</label>
     </div>
 
     <div class='ind_question'>
-        <input type="radio" name="question5" value="answer55" id="answer55">
-        <label for = "answer55">Relax at home, read a good book or watch TV</label>
+        <input type="radio" name="question5" value="a54" id="a54">
+        <label for = "a54">I might meet up with friends but most likely I'll stay home</label>
+    </div>
+
+    <div class='ind_question'>
+        <input type="radio" name="question5" value="a55" id="a55">
+        <label for = "a55">Relax at home, read a good book or watch TV</label>
     </div>
 </fieldset>
 
-</form>
+
+ <%= submit_tag "Where Should I live in Chicago?", class:"submit_button" %>
+
+<% end %>
+
 
 
 

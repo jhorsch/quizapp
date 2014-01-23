@@ -1,16 +1,15 @@
 @mixin fieldset($color){
 
-
-
-        border: 1px solid $color_clouds;
-        background: fade-out($color_clouds, .1);
+        border: 1px solid $color;
+        background: fade-out($color, .1);
         margin-bottom: 1.5em;
         border-radius: 10px;
         padding: 20px;
         margin: 40px 0 0 0;
         // width: 600px;
         position: relative;
-        box-shadow: 2px 2px 2px $color_clouds;
+        box-shadow: 2px 2px 2px $color;
+        // background-image: url("chiflag.png");
 
         &:hover{
             opacity: .85;
