@@ -73,7 +73,7 @@ h3{
     height: 200px;
     top: 40px;
     right: 40px;
-    background: url('chicagoflag.jpg') center center no-repeat fixed;
+    background: url('chicagoflag.jpg') center center no-repeat;
     // z-index: 100;
 
 
@@ -108,20 +108,15 @@ fieldset {
 }
 
 
-
-label {
-    margin-right: 10px;
-}
-
-
 .ind_question{
     margin-top: 10px;
+
 }
 
 .submit_button{
 
-    width: 600px;
-    height: 100px;
+    max-width: 600px;
+    width: 100%;
     color: $color_hancock;
     background: $color_sky;
     border: 10px;
@@ -134,7 +129,7 @@ label {
 
 @media screen and (max-width: 600px) {
 
-    h1{
+    h1, body{
         text-align: center;
     }
 
