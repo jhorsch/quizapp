@@ -4,5 +4,5 @@ Quizapp::Application.routes.draw do
   # get '/answerspage' => 'quizpage#show'
 
     resources :quizpage
-
+root :to => 'quizpage#index'
 end
