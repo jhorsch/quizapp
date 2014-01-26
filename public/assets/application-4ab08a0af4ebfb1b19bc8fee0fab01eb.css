@@ -1,0 +1,357 @@
+@charset "UTF-8";/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: 0 0; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: 0 0; }
+
+.container {
+  padding: 0 20px; }
+
+body {
+  font-family: "gill sans", Helvetica;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 15px 0 50px 0;
+  background: url("ChicagoSkyline.jpg") top center no-repeat;
+  background-size: cover;
+  color: #2d384e; }
+
+h1 {
+  font-size: 36px;
+  margin: 20px 0;
+  font-weight: bold;
+  line-height: 40px;
+  color: #ccccca;
+  width: 100%;
+  text-align: left; }
+
+h2 {
+  font-size: 30px;
+  line-height: 32px; }
+
+h3 {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 22px; }
+
+.banner-image {
+  max-width: 100%;
+  position: absolute;
+  width: 150px;
+  height: 200px;
+  top: 40px;
+  right: 40px;
+  background: url("chicagoflag.jpg") center center no-repeat; }
+
+fieldset {
+  max-width: 600px; }
+
+.field1 {
+  border: 1px solid #ccccca;
+  background: rgba(204, 204, 202, 0.9);
+  margin-bottom: 1.5em;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 40px 0 0 0;
+  position: relative;
+  box-shadow: 2px 2px 2px #ccccca; }
+  .field1 h2 {
+    color: #0066ad; }
+  .field1:hover {
+    opacity: .85; }
+  .field1 input {
+    display: none; }
+    .field1 input + label {
+      display: inline-block;
+      border-radius: 5px;
+      padding: 10px;
+      width: 100%; }
+      .field1 input + label:hover {
+        background: rgba(0, 102, 173, 0.25);
+        color: black; }
+    .field1 input:checked + label {
+      background: #0066ad;
+      border-radius: 5px;
+      border-color: white;
+      color: #ccccca; }
+      .field1 input:checked + label:before {
+        content: "✓ "; }
+
+.field2 {
+  border: 1px solid #ccccca;
+  background: rgba(204, 204, 202, 0.9);
+  margin-bottom: 1.5em;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 40px 0 0 0;
+  position: relative;
+  box-shadow: 2px 2px 2px #ccccca; }
+  .field2 h2 {
+    color: #2d384e; }
+  .field2:hover {
+    opacity: .85; }
+  .field2 input {
+    display: none; }
+    .field2 input + label {
+      display: inline-block;
+      border-radius: 5px;
+      padding: 10px;
+      width: 100%; }
+      .field2 input + label:hover {
+        background: rgba(45, 56, 78, 0.25);
+        color: black; }
+    .field2 input:checked + label {
+      background: #2d384e;
+      border-radius: 5px;
+      border-color: white;
+      color: #ccccca; }
+      .field2 input:checked + label:before {
+        content: "✓ "; }
+
+.field3 {
+  border: 1px solid #ccccca;
+  background: rgba(204, 204, 202, 0.9);
+  margin-bottom: 1.5em;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 40px 0 0 0;
+  position: relative;
+  box-shadow: 2px 2px 2px #ccccca; }
+  .field3 h2 {
+    color: #9f4b1f; }
+  .field3:hover {
+    opacity: .85; }
+  .field3 input {
+    display: none; }
+    .field3 input + label {
+      display: inline-block;
+      border-radius: 5px;
+      padding: 10px;
+      width: 100%; }
+      .field3 input + label:hover {
+        background: rgba(159, 75, 31, 0.25);
+        color: black; }
+    .field3 input:checked + label {
+      background: #9f4b1f;
+      border-radius: 5px;
+      border-color: white;
+      color: #ccccca; }
+      .field3 input:checked + label:before {
+        content: "✓ "; }
+
+.field4 {
+  border: 1px solid #ccccca;
+  background: rgba(204, 204, 202, 0.9);
+  margin-bottom: 1.5em;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 40px 0 0 0;
+  position: relative;
+  box-shadow: 2px 2px 2px #ccccca; }
+  .field4 h2 {
+    color: #00354b; }
+  .field4:hover {
+    opacity: .85; }
+  .field4 input {
+    display: none; }
+    .field4 input + label {
+      display: inline-block;
+      border-radius: 5px;
+      padding: 10px;
+      width: 100%; }
+      .field4 input + label:hover {
+        background: rgba(0, 53, 75, 0.25);
+        color: black; }
+    .field4 input:checked + label {
+      background: #00354b;
+      border-radius: 5px;
+      border-color: white;
+      color: #ccccca; }
+      .field4 input:checked + label:before {
+        content: "✓ "; }
+
+.field5 {
+  border: 1px solid #ccccca;
+  background: rgba(204, 204, 202, 0.9);
+  margin-bottom: 1.5em;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 40px 0 0 0;
+  position: relative;
+  box-shadow: 2px 2px 2px #ccccca; }
+  .field5 h2 {
+    color: #358a7d; }
+  .field5:hover {
+    opacity: .85; }
+  .field5 input {
+    display: none; }
+    .field5 input + label {
+      display: inline-block;
+      border-radius: 5px;
+      padding: 10px;
+      width: 100%; }
+      .field5 input + label:hover {
+        background: rgba(53, 138, 125, 0.25);
+        color: black; }
+    .field5 input:checked + label {
+      background: #358a7d;
+      border-radius: 5px;
+      border-color: white;
+      color: #ccccca; }
+      .field5 input:checked + label:before {
+        content: "✓ "; }
+
+.ind_question {
+  margin-top: 10px; }
+
+.submit_button {
+  max-width: 600px;
+  width: 100%;
+  color: #358a7d;
+  border: 10px;
+  font-size: 35px;
+  display: block;
+  border: 1px solid #ffeab4;
+  background: rgba(255, 234, 180, 0.9);
+  margin-bottom: 1.5em;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 40px 0 0 0;
+  position: relative;
+  box-shadow: 2px 2px 2px #ffeab4; }
+  .submit_button h2 {
+    color: #ffeab4; }
+  .submit_button:hover {
+    opacity: .85; }
+  .submit_button input {
+    display: none; }
+    .submit_button input + label {
+      display: inline-block;
+      border-radius: 5px;
+      padding: 10px;
+      width: 100%; }
+      .submit_button input + label:hover {
+        background: rgba(255, 234, 180, 0.25);
+        color: black; }
+    .submit_button input:checked + label {
+      background: #ffeab4;
+      border-radius: 5px;
+      border-color: white;
+      color: #ffeab4; }
+      .submit_button input:checked + label:before {
+        content: "✓ "; }
+
+@media screen and (max-width: 300px) {
+  h1, body {
+    text-align: center; }
+
+  label {
+    line-height: 18px;
+    padding: 0 5px; } }
